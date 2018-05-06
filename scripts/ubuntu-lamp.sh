@@ -9,11 +9,9 @@ sudo rm -rf /var/www/html
 
 sudo ln -s /vagrant /var/www/html
 
-sudo apt-get install -y php php-mcrypt
+sudo apt-get install -y php
 
 sudo apt-get install -y mysql-server
-
-mysql -u root -e "SHOW DATABASES";
 
 cd /vagrant 
 
