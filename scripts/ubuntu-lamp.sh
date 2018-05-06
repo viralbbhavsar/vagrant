@@ -1,17 +1,17 @@
 #!/bin/bash
-apt-get update --exclude = kernel
+sudo apt-get update --exclude = kernel
 
-apt-get install nano git unzip screen
+sudo apt-get install -y nano git unzip screen
 
-apt-get install apache2
+sudo apt-get install -y apache2
 
-rm -rf /var/www/html
+sudo rm -rf /var/www/html
 
-ln -s /vagrant /var/www/html
+sudo ln -s /vagrant /var/www/html
 
-apt-get install php php-mcrypt
+sudo apt-get install -y php php-mcrypt
 
-apt-get install mysql-server
+sudo apt-get install -y mysql-server
 
 mysql -u root -e "SHOW DATABASES";
 
